@@ -121,7 +121,7 @@ export default function (babel) {
       path.node.body.unshift(
         t.importDeclaration(
           [
-            t.importDefaultSpecifier(t.identifier('React'))
+            t.importDefaultSpecifier(t.identifier('* as React'))
           ],
           t.stringLiteral('react')
         )
