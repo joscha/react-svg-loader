@@ -61,7 +61,7 @@ export default function (babel) {
         t.identifier(className),
         t.memberExpression(
           t.identifier('React'),
-          t.identifier('Component')
+          t.identifier('Component<any, undefined>')
         ),
         t.classBody(
           [
